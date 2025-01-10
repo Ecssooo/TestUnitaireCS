@@ -6,11 +6,12 @@ namespace _2023_GC_A2_Partiel_POO.Level_2
     /// </summary>
     public abstract class Skill
     {
-        public Skill(TYPE type, int power, StatusPotential status)
+        public Skill(TYPE type, int power, StatusPotential status, int pp)
         {
             Type = type;
             Power = power;
             Status = status;
+            PP = pp;
         }
 
         /// <summary>
@@ -25,7 +26,13 @@ namespace _2023_GC_A2_Partiel_POO.Level_2
         /// Le statut infligé à la cible à la suite de l'attaque
         /// </summary>
         public StatusPotential Status { get; private set; }
+        
+        public int PP { get; private set; }
 
+        public virtual void UsePP()
+        {
+            if(PP > 0) PP--;
+        }
     }
 
 }

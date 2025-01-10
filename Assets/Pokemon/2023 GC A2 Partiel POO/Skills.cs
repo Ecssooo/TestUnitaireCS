@@ -14,7 +14,7 @@ namespace _2023_GC_A2_Partiel_POO.Level_2
     /// </summary>
     public class Punch : Skill
     {
-        public Punch() : base(TYPE.NORMAL, 70, StatusPotential.NONE) { }
+        public Punch() : base(TYPE.NORMAL, 70, StatusPotential.NONE, 1) { }
     }
 
     /// <summary>
@@ -22,7 +22,7 @@ namespace _2023_GC_A2_Partiel_POO.Level_2
     /// </summary>
     public class MegaPunch : Skill
     {
-        public MegaPunch() : base(TYPE.NORMAL, 7000, StatusPotential.NONE) { }
+        public MegaPunch() : base(TYPE.NORMAL, 7000, StatusPotential.NONE, 1) { }
     }
 
     /// <summary>
@@ -30,20 +30,20 @@ namespace _2023_GC_A2_Partiel_POO.Level_2
     /// </summary>
     public class FireBall : Skill
     {
-        public FireBall() : base(TYPE.FIRE, 50, StatusPotential.BURN) { }
+        public FireBall() : base(TYPE.FIRE, 50, StatusPotential.BURN, 1) { }
     }
     /// <summary>
     /// Attaque eau basique
     /// </summary>
     public class WaterBlouBlou : Skill
     {
-        public WaterBlouBlou() : base(TYPE.WATER, 20, StatusPotential.NONE) { }
+        public WaterBlouBlou() : base(TYPE.WATER, 20, StatusPotential.NONE, 1) { }
     }
     /// <summary>
     /// Attaque plante qui inflige le statut SLEEP
     /// </summary>
     public class MagicalGrass : Skill
     {
-        public MagicalGrass() : base(TYPE.GRASS, 70, StatusPotential.SLEEP) { }
+        public MagicalGrass() : base(TYPE.GRASS, 70, StatusPotential.SLEEP, 1) { }
     }
 }
