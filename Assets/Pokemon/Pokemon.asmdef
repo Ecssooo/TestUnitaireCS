@@ -1,0 +1,6 @@
+{
+    "name": "Pokemon",
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ]
+}
